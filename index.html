@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://style.fluig.com/css/fluig-style-guide-flat.min.css" data-style-guide-theme>
+	<link rel="stylesheet" type="text/css" href="https://style.fluig.com/css/fluig-style-guide-docs.min.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <div class="fluig-style-guide">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">                  
+                </div>
+                <div class="col-md-10">
+                    <h1 class="text-center">Cadastro Cliente / Produto</h1>
+                </div>
+                <div class="col-md-1 fs-lg-margin-top">
+                    <button type="submit" class="btn btn-primary" id="send">Enviar</button>
+                </div>
+            </div>
+            <div class="row requester">
+                <div class="form-group col-md-3">
+                    <label for="dateTime">Data da solicitação</label>
+                    <input class="form-control" type="text" id="dateTime" placeholder="DD/MM/AAAA">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="name">Nome</label>
+                    <input class="form-control" type="text" id="name" placeholder="Nome">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="field">Área</label>
+                    <input class="form-control" type="text" id="field" placeholder="ex.: Comercial">
+                </div>
+            </div>
+            <div class="request">
+                <h2>Solicitação</h2>
+                <div class="provider">
+                    <h3>Dados do fornecedor</h3>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="razaoSocial">Razão social</label>
+                            <input class="form-control required" type="text" id="razaoSocial" placeholder="Obrigatório">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="cnpj">CNPJ</label>
+                            <input class="form-control required" type="text" id="cnpj" placeholder="Obrigatório">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="nomeFantasia">Nome Fantasia</label>
+                            <input class="form-control required" type="text" id="nomeFantasia" placeholder="Obrigatório">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inscricaoEstadual">Inscrição Estadual</label>
+                            <input class="form-control" type="text" id="inscricaoEstadual" placeholder="Opcional">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="cep">CEP</label>
+                            <input class="form-control required" type="text" id="cep" placeholder="Obrigatório">
+                        </div>
+                        <div class="form-group col-md-4 fs-float-right">
+                            <label for="inscricaoMunicipal">Inscrição Municipal</label>
+                            <input class="form-control" type="text" id="inscricaoMunicipal" placeholder="Opcional">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="address">Endereço</label>
+                            <input class="form-control required" type="text" id="address" placeholder="Obrigatório">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="complement">Complemento</label>
+                            <input class="form-control" type="text" id="complement" placeholder="Opcional">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="number">Número</label>
+                            <input class="form-control required" type="text" id="number" placeholder="Obrigatório">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="district">Bairro</label>
+                            <input class="form-control required" type="text" id="district" placeholder="Obrigatório">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="state">Estado</label>
+                            <input class="form-control required" type="text" id="state" placeholder="Obrigatório">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="county">Município</label>
+                            <input class="form-control required" type="text" id="county" placeholder="Obrigatório">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="nomeContato">Nome da pessoa de contato</label>
+                            <input class="form-control required" type="text" id="nomeContato" placeholder="Obrigatório">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="telefoneContato">Telefone</label>
+                            <input class="form-control required" type="text" id="telefoneContato" placeholder="Obrigatório">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="emailContato">Email</label>
+                            <input class="form-control required" type="text" id="emailContato" placeholder="Obrigatório">
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <h3>Produtos</h3>
+                    <div class="row">
+                        <button type="button" class="btn btn-success fs-float-right fs-md-margin-bottom fs-md-margin-right" id="buttonItemInclude">Incluir item</button>
+                    </div>
+                    <div class="row item">
+                        <div class="col-md-1 hidden containerButtonDeleteItem">
+                            <button type="button" class="btn btn-secondary buttonDeleteItem">Apagar</button>
+                        </div>
+                        
+                        <div class="form-group col-md-11 fs-float-right">
+                            <div class="row containerProduct">
+                                <label for="descricaoProduto" class="col-sm-3 control-label ">Descrição do produto:</label>
+                                <div class="col-sm-9 fs-md-margin-bottom">
+                                    <input type="text" class="form-control required" id="descricaoProduto" placeholder="Obrigatório">
+                                </div>
+                                
+                                <div class="form-group col-md-3">
+                                    <label for="unidadeMedida">Und. Medida</label>
+                                    <select class="form-control" id="unidadeMedida">
+                                        <option>Kilograma</option>
+                                        <option>grama</option>             
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="qtdeEstoque">Qtde em estoque</label>
+                                    <input class="form-control required" type="text" id="qtdeEstoque" placeholder="Obrigatório">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="valorUnitario">Valor Unitário</label>
+                                    <input class="form-control required" type="text" id="valorUnitario" placeholder="Obrigatório">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="valorTotal">Valor Total</label>
+                                    <input class="form-control" type="text" id="valorTotal" placeholder="Calculo Automatico">
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="appendices">
+                    <h3>Anexos</h3>
+                    <div class="row">
+                        <div class="col md-1 fs-md-margin">                              
+                                <input type="file" id="fileUpload" class="hidden"/> 
+                                <button type="button" class="btn btn-primary" id="openFileUpload">Anexar</button>                                    
+                        </div>
+                        <div class="col-md-10 fs-bg-white fs-float-right fs-xx-huge-margin-bottom  fs-md-margin-right">
+                            <div class="row fs-md-padding-left fs-md-padding-top">
+                                <p>Documentos (Obrigatório a inclusão de pelo menos um documento)</p>
+                            </div>
+                            <div class="row fs-bg-white" id="docsArea">
+                                
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="https://style.fluig.com/js/fluig-style-guide-docs-css.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
